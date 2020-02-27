@@ -46,7 +46,12 @@
       </div>
 
       <script id='DOM manipulation script'>
+        // here i used innerHtml(innerHTML retrieves and sets the content in HTML format.)
+        // differnnce between innerText & innerHtml( innerText retrieves and sets the content of the tag as plain text, whereas innerHTML retrieves and sets the content in HTML format);
         // write me! (... without using cloneNode, that's kind of cheating)
+        const targetDiv = document.getElementById('target');
+        const replicationDiv = document.getElementById('replication');
+        targetDiv.children[1].innerHTML = replicationDiv.children[1].innerHTML;
       </script>
 
     </div>

@@ -36,7 +36,14 @@
       </div>
 
       <script id='DOM manipulation script'>
+        //inspired from examples-modifying-elements.
+        //children[0] first child en <div> from target (childNode).
+        //innerText( représentant le contenu textuel ).
+        
         // write me! (... without using cloneNode, that's kind of cheating)
+        const targetDiv = document.getElementById('target');
+        const replicationDiv = document.getElementById('replication');
+        targetDiv.children[0].innerText = replicationDiv.children[0].innerText;
       </script>
 
     </div>

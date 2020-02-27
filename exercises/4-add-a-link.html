@@ -38,7 +38,15 @@
       </div>
 
       <script id='DOM manipulation script'>
+        //inspired from examples-creating-elements/a.html .
        // write me! (... without using cloneNode, that's kind of cheating)
+       const targetDiv = document.getElementById('target');
+       const replicationDiv = document.getElementById('replication');
+       const aEL = document.createElement('a');
+       aEL.innerText = 'Mr. Traversy does it again!';
+       aEL.href = 'https://www.youtube.com/watch?v=0ik6X4DJKCc';
+       aEL.target ='_blank';
+       document.getElementById('replication').appendChild(aEL);
       </script>
 
     </div>

@@ -33,11 +33,14 @@
       </div>
 
       <div id='replication'>
-        <a href='https://www.badgerbadgerbadger.com' target="blank">learn about pigs</a>
+        <a href='https://www.badgerbadgerbadger.com' target="_blank">learn about pigs</a>
       </div>
 
       <script id='DOM manipulation script'>
         // write me! (... without using cloneNode, that's kind of cheating)
+        const targetDiv = document.getElementById('target');
+        const replicationDiv = document.getElementById('replication');
+        targetDiv.children[0].innerText = replicationDiv.children[0].innerText;
       </script>
 
     </div>
